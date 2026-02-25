@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOPUS NEWSLETTER</title>
+    <style type="text/css">
+        /* 이메일 클라이언트별 리셋 스타일 */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #f4f4f0; }
+
+        /* 커피 토크 접어두기 CSS */
+        #coffee-cb { display: none !important; }
+        #coffee-content { display: none; max-height: 0; overflow: hidden; }
+        #coffee-cb:checked + #coffee-content { display: block !important; max-height: none !important; }
+        #coffee-cb:checked ~ div label .open-text { display: none !important; }
+        #coffee-cb:checked ~ div label .close-text { display: inline-block !important; }
+
+        /* 출판계 일정 접어두기 CSS */
+        #industry-cb { display: none !important; }
+        #industry-content { display: none; max-height: 0; overflow: hidden; }
+        #industry-cb:checked + #industry-content { display: block !important; max-height: none !important; }
+        #industry-cb:checked ~ div label .open-text { display: none !important; }
+        #industry-cb:checked ~ div label .close-text { display: inline-block !important; }
+
+        .toggle-btn {
+            display: inline-block;
+            padding: 6px 14px;
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            color: #666666;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+        .feedback-btn-individual {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #50E3C2;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .feedback-btn-bottom {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4A90E2;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* 일정 카테고리 라벨 */
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 6px;
+        }
+        .badge-group { background-color: #8b5cf6; } /* 단체 */
+        .badge-industry { background-color: #3b82f6; } /* 출판계 */
+    </style>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+	<tbody>
+		<tr>
+			<td align="center" style="padding:40px 10px"><!-- Main Container -->
+			<table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:1px solid #dddddd; box-shadow:0 10px 15px -3px rgba(0,0,0,0.1); max-width:640px; width:640px"><!-- Header -->
+				<tbody>
+					<tr>
+						<td align="center" style="border-bottom:1px solid #f3f4f6; padding:48px 30px">
+						<h1 style="color:#1a1a1a; font-family:'Noto Serif KR',serif; font-size:30px; font-weight:bold; letter-spacing:-1px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">KOPUS NEWSLETTER</h1>
+
+						<p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; letter-spacing:2px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:5px; text-transform:uppercase">Korean Publishers Society | 2026. 02. 23</p>
+						</td>
+					</tr>
+					<!-- Intro Section -->
+					<tr>
+						<td align="center" style="background-color:#f9fafb; padding:60px 40px">
+						<h2 style="color:#1a1a1a; font-family:'Noto Serif KR',serif; font-size:24px; font-weight:bold; line-height:1.3; margin-bottom:24px; margin-left:0; margin-right:0; margin-top:0">책 만드는 사람들,<br />
+						우리가 만들어가는 이야기.</h2>
+
+						<div style="color:#4b5563; font-family:'Noto Sans KR',sans-serif; font-size:15px; line-height:1.6; margin-bottom:0; margin-left:auto; margin-right:auto; margin-top:0; max-width:480px">
+						<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">안녕하세요. 한국출판인회의입니다.</p>
+
+						<p style="font-size:14px; font-style:italic; margin-bottom:0; margin-left:0; margin-right:0; margin-top:16px">&quot;텍스트가 그 어느 때보다 빛나는 요즘, 출판의 최전선에서 고군분투하시는 회원사 여러분께 작은 영감과 안부를 전합니다.&quot;</p>
+						</div>
+						</td>
+					</tr>
+					<!-- Section: 단체 소식 -->
+					<tr>
+						<td style="border-bottom:1px solid #f3f4f6; padding:60px 40px">
+						<div style="margin-bottom:32px; text-align:center"><strong style="border-bottom:2px solid #22c55e; color:#1a1a1a; display:inline-block; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; padding-bottom:8px">📢 단체 소식</strong> </div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+							<tbody>
+								<tr>
+									<td align="center"><img alt="홍영완 회장" src="https://www.kopus.org/wp-content/uploads/2026/02/%ED%95%9C%EA%B5%AD%EC%B6%9C%ED%8C%90%EC%9D%B8%ED%9A%8C%EC%9D%98-%EC%A0%9C14%EB%8C%80-%ED%9A%8C%EC%9E%A5%EC%97%90-%ED%99%8D%EC%98%81%EC%99%84-%EC%9C%8C%EB%B6%81-%EB%8C%80%ED%91%9C-%EC%84%A0%EC%B6%9C-225x300.png" style="border-radius:2px; display:block; margin-bottom:24px" width="192" />
+									<h3 style="font-family:'Noto Sans KR',sans-serif; font-size:20px; font-weight:bold; line-height:1.4; margin-bottom:8px; margin-left:0; margin-right:0; margin-top:0"><a href="https://www.kopus.org/info-noticelist/?uid=1380&amp;mod=document" style="color: #1a1a1a; text-decoration: none;" target="_blank">한국출판인회의 제14대 회장에 홍영완 윌북 대표 선출</a></h3>
+
+									<p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:14px; margin-bottom:24px; margin-left:0; margin-right:0; margin-top:0">&ldquo;AI 시대, 지속 가능한 출판 환경 조성할 것&rdquo; ～ 압도적 지지로 당선</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="color:#374151; font-family:'Noto Sans KR',sans-serif; font-size:15px; line-height:1.7; text-align:justify">
+									<p style="margin-bottom:20px; margin-left:0; margin-right:0; margin-top:0">홍영완 신임 회장은 취임과 동시에 다음의 4가지 핵심 과제를 중점 추진할 방침입니다.</p>
+
+									<p style="margin-bottom:20px; margin-left:0; margin-right:0; margin-top:0">첫째, <strong>‘AI 시대의 대응 전략 수립’</strong> 입니다. &lsquo;한국출판인회의 AI 위원회&rsquo;를 신설하여 인공지능기본법 내에 저작권자와 출판권자의 권리 보호 조항을 명문화할 계획입니다. 둘째, <strong>‘K-출판 세계화 지원 사업’</strong> 을 통해 제2의 한강 작가가 탄생할 수 있도록 주요 도시 내 &lsquo;K-북 팝업스토어&rsquo; 개설을 추진합니다. 셋째, <strong>‘출판콘텐츠 제작비 세액공제 연내 도입’</strong> 을 완수하여 실질적인 혜택을 제공하겠습니다. 넷째, <strong>‘독서 문해력 지수’</strong> 개발을 통해 사회적 문제인 문해력 저하 해결에 앞장설 예정입니다.</p>
+
+									<div style="margin-top:24px; text-align:center"><a href="https://www.kopus.org/info-noticelist/?uid=1380&amp;mod=document" style="display: inline-block; padding: 10px 24px; background-color: #1a1a1a; color: #ffffff; font-size: 13px; font-weight: bold; text-decoration: none; border-radius: 4px;" target="_blank">전문 보기</a></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- Section: 출판 소식 -->
+					<tr>
+						<td style="background-color:#f9fafb; border-bottom:1px solid #f3f4f6; padding:60px 40px">
+						<div style="margin-bottom:40px; text-align:center"><strong style="border-bottom:2px solid #9ca3af; color:#1a1a1a; display:inline-block; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; padding-bottom:8px">📰 출판 소식</strong> </div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="width:100%"><!-- Article 1 -->
+							<tbody>
+								<tr>
+									<td style="padding-bottom:40px">
+									<p style="color:#9ca3af; font-family:'Noto Sans KR',sans-serif; font-size:11px; font-weight:bold; letter-spacing:1px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">[연합뉴스]</p>
+
+									<h4 style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; margin-bottom:8px; margin-left:0; margin-right:0; margin-top:4px">한국인들 어떤 책 읽나&hellip;시대 따라 달라진 독서</h4>
+
+									<p style="color:#4b5563; font-family:'Noto Sans KR',sans-serif; font-size:14px; line-height:1.6; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">과거 1980년대 시집의 감성부터 현재의 실용적인 재테크 열풍까지, 한국인의 독서 지형도는 우리 사회의 변천사를 투영합니다. 베스트셀러는 여전히 그 시대를 살아가는 사람들의 욕망을 보여주는 거울입니다.</p>
+									<a href="https://www.yna.co.kr/view/AKR20260219109700518?input=1195m" style="display: inline-block; margin-top: 12px; font-family: 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: bold; color: #1a1a1a; text-decoration: underline;" target="_blank">기사 원문 보기</a></td>
+								</tr>
+								<!-- Article 2 -->
+								<tr>
+									<td style="padding-bottom:40px">
+									<p style="color:#9ca3af; font-family:'Noto Sans KR',sans-serif; font-size:11px; font-weight:bold; letter-spacing:1px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">[한국경제]</p>
+
+									<h4 style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; margin-bottom:8px; margin-left:0; margin-right:0; margin-top:4px">&#39;위기의 대학 도서관&#39;&hellip;서울대 출입 40%&darr;&middot;대출자 53%&darr;</h4>
+
+									<p style="color:#4b5563; font-family:'Noto Sans KR',sans-serif; font-size:14px; line-height:1.6; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">대학 도서관이 더 이상 과거와 같은 &#39;지식의 성전&#39; 역할을 수행하지 못하고 있다는 소식은 출판계와 교육계에 적지 않은 충격을 던져주고 있어요. 서울대학교를 비롯한 주요 대학 도서관의 대출자 수가 몇 년 사이 절반 가까이 급감한 배경에는 스마트폰과 태블릿에 대한 의존도, 전자책 구독 서비스의 대중화가 자리 잡고 있습니다.</p>
+									<a href="https://www.hankyung.com/article/202602191801i" style="display: inline-block; margin-top: 12px; font-family: 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: bold; color: #1a1a1a; text-decoration: underline;" target="_blank">기사 원문 보기</a></td>
+								</tr>
+								<!-- Article 3 -->
+								<tr>
+									<td style="padding-bottom:50px">
+									<p style="color:#9ca3af; font-family:'Noto Sans KR',sans-serif; font-size:11px; font-weight:bold; letter-spacing:1px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">[경향신문]</p>
+
+									<h4 style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; margin-bottom:8px; margin-left:0; margin-right:0; margin-top:4px">책 수백만권 스캔한 앤스로픽 충격&hellip;AI가 뒤흔든 &lsquo;저작권&rsquo;</h4>
+
+									<p style="color:#4b5563; font-family:'Noto Sans KR',sans-serif; font-size:14px; line-height:1.6; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">인공지능이 방대한 데이터를 흡수하여 새로운 콘텐츠를 생산해내는 능력은 놀랍지만, 그 밑바탕이 되는 지식 자원의 가치를 어떻게 보상하고 보호할 것인지에 대한 사회적 합의는 여전히 걸음마 단계에 머물러 있네요. 이는 단순히 기술적 문제를 넘어 지적 재산권이라는 근본적인 원칙이 기술 권력에 의해 위협받고 있음을 보여주는 사례로, 출판 생태계의 지속 가능성을 위한 제도적 장치 마련이 시급해 보입니다.</p>
+									<a href="https://weekly.khan.co.kr/article/202602230600031" style="display: inline-block; margin-top: 12px; font-family: 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: bold; color: #1a1a1a; text-decoration: underline;" target="_blank">기사 원문 보기</a></td>
+								</tr>
+                                <!-- Deep Inside Section -->
+                                <tr>
+                                    <td style="border-top: 1px dashed #d1d5db; padding-top: 40px;">
+                                        <div style="background-color: #ffffff; border-radius: 8px; border: 1px solid #e5e7eb; padding: 24px;">
+                                            <h4 style="color: #1a1a1a; font-family: 'Noto Serif KR', serif; font-size: 18px; font-weight: bold; margin-bottom: 16px; margin-top: 0;">[Deep Inside] 도서정가제 개정 재논의에 부쳐</h4>
+                                            <div style="color: #374151; font-family: 'Noto Sans KR', sans-serif; font-size: 14px; line-height: 1.8;">
+                                                <p style="margin-top: 0; margin-bottom: 16px;">올해는 도서정가제 개정 재논의가 진행될 예정입니다. 개정 12년을 맞이한 도서정가제는 <strong><a href="https://www.donga.com/news/Culture/article/all/20201006/103273436/1" style="color: #2563eb; text-decoration: none;" target="_blank">‘중소 서점과 작가들이 숨 쉴 수 있는 최소한의 안전장치’</a></strong> 가 되어주고 있습니다.</p>
+                                                <p style="margin-bottom: 16px;">만약 이 제도가 흔들리면 <strong><a href="https://www.hani.co.kr/arti/culture/book/1228595.html" style="color: #2563eb; text-decoration: none;" target="_blank">‘지역 서점의 폐업이 가속화되어 결국 우리 독자들의 문화 향유 기회도 줄어들게 될 것’</a></strong> 입니다.</p>
+                                                <p style="margin-bottom: 0;">지난 2023년, 헌법재판소도 <strong><a href="https://www.lawtimes.co.kr/news/articleView.html?idxno=189518" style="color: #2563eb; text-decoration: none;" target="_blank">‘출판 생태계의 황폐화를 막고 창작 의욕을 높이기 위해 이 제도가 꼭 필요하며 합헌 결정’</a></strong> 을 내렸습니다. 단순한 가격 문제를 넘어 우리 문화의 다양성을 지키는 이 소중한 울타리를 어떻게 더 건강하게 가꾸어 가면 좋을까요?</p>
+                                                <div style="text-align: center;">
+                                                    <a href="https://forms.gle/7GbFEyhCi3GKLP8G6" class="feedback-btn-individual" target="_blank">의견 전달하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- Section: 출판사 커피 토크 -->
+					<tr>
+						<td style="border-bottom:1px solid #f3f4f6; padding:60px 40px">
+						<div style="margin-bottom:32px; text-align:center"><strong style="border-bottom:2px solid #facc15; color:#1a1a1a; display:inline-block; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; padding-bottom:8px">☕ 출판사 커피 토크</strong> </div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="background-color:#eff6ff; border-left:4px solid #facc15; margin-bottom:30px; width:100%">
+							<tbody>
+								<tr>
+									<td style="padding:24px; text-align:center">
+									<h4 style="font-family:'Noto Serif KR',serif; font-size:20px; font-weight:bold; line-height:1.4; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">도서출판 멍멍,<br />
+									새로운 독서 경험을 설계하다</h4>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- 접어두기용 체크박스 --><input id="coffee-cb" type="checkbox" />
+						<div id="coffee-content">
+						<table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:30px; width:100%">
+							<tbody>
+								<tr>
+									<td style="padding-right:5px" width="50%"><img alt="출판사 전경 1" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3364" style="border-radius:4px; display:block" width="275" /></td>
+									<td style="padding-left:5px" width="50%"><img alt="출판사 전경 2" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3367" style="border-radius:4px; display:block" width="275" /></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+							<tbody>
+								<tr>
+									<td style="color:#374151; font-family:'Noto Sans KR',sans-serif; font-size:15px; line-height:1.8; text-align:center">
+									<p style="color:#111827; font-style:italic; font-weight:500; margin-bottom:32px; margin-left:0; margin-right:0; margin-top:0">&quot;책은 단순히 읽는 것을 넘어, 소유하고 경험하는 아름다운 물성입니다.&quot;</p>
+
+									<div style="margin-bottom:24px">
+									<p style="color:#2563eb; font-weight:bold; margin-bottom:4px; margin-left:0; margin-right:0; margin-top:0">☕ &quot;안녕하세요! 지금 계신 곳은 어디인가요? 어떤 음료를 즐기고 계신지 궁금해요.&quot;</p>
+
+									<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">저는 에디터 B입니다. 로스 커피에서 산미가 있는 따뜻한 아메리카노를 마시고 있어요.</p>
+									</div>
+
+									<div style="margin-bottom:24px">
+									<p style="color:#2563eb; font-weight:bold; margin-bottom:4px; margin-left:0; margin-right:0; margin-top:0">📖 &quot;요즘 가방 속에 넣어 다니거나 침대 머리맡에 둔 책 한 권, 소개해 주시겠어요?&quot;</p>
+
+									<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">가즈오 이시구로의 &lt;클라라와 태양&gt;. 친구가 선물해서 읽고 있는데, 홍한별 선생님의 번역이 인상적이에요.</p>
+									</div>
+
+									<div style="margin-bottom:24px">
+									<p style="color:#2563eb; font-weight:bold; margin-bottom:4px; margin-left:0; margin-right:0; margin-top:0">🏢 &quot;출판사에서 어떤 역할을 맡고 계신지, 그리고 우리 출판사는 어떤 곳인지 알려주세요.&quot;</p>
+
+									<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">저희 멍멍 출판사는 세상에 필요한 질문을 던지는 작은 책들을 만드는 것을 모토로 2026년에 설립되었어요. 모든 구성원이 디자인 감각을 공유하며 개성 있는 판형을 시도한다는 게 특장점입니다.</p>
+									</div>
+
+									<div style="margin-bottom:24px">
+									<p style="color:#2563eb; font-weight:bold; margin-bottom:4px; margin-left:0; margin-right:0; margin-top:0">🔥 &quot;요즘 가장 공들이고 있거나, 에너지를 쏟고 있는 업무는 무엇인가요?&quot;</p>
+
+									<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">올여름에 열릴 멍멍북페어 기획에 힘을 쏟고 있어요!</p>
+									</div>
+
+									<div style="margin-bottom:32px">
+									<p style="color:#2563eb; font-weight:bold; margin-bottom:4px; margin-left:0; margin-right:0; margin-top:0">✨ &quot;독자들을 만나기 위해 열심히 준비 중인 신간 소식도 살짝 들려주세요.&quot;</p>
+
+									<p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">&#39;멍멍이와 야옹이&#39; 서로 다른 성향을 가진 두 동물의 우정 이야기입니다. 현재 최종교를 보고 있습니다. 많은 관심 부탁 드려요.</p>
+									</div>
+
+									<p style="color:#111827; font-weight:bold; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0">&quot;오늘 이야기 나누어 주셔서 감사합니다. :)&quot;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<!-- 접기/펴기 버튼 라벨 -->
+
+						<div style="margin-top:20px; text-align:center"><label class="toggle-btn" for="coffee-cb" id="toggle-label"><span class="open-text">커피 토크 전문 읽기</span> <span class="close-text" style="display:none">커피 토크 접기</span> </label></div>
+						</td>
+					</tr>
+					<!-- Section: 인사이트 -->
+					<tr>
+						<td style="background-color:#f9fafb; border-bottom:1px solid #f3f4f6; padding:60px 40px">
+						<div style="margin-bottom:40px; text-align:center"><strong style="border-bottom:2px solid #ef4444; color:#1a1a1a; display:inline-block; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; padding-bottom:8px">💡 인사이트</strong> </div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+							<tbody>
+								<tr>
+									<td style="padding-right:15px; vertical-align:top" width="50%">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-radius:8px; border:1px solid #f3f4f6; width:100%">
+										<tbody>
+											<tr>
+												<td style="background-color:#f9fafb; padding:15px; text-align:center">
+												<div style="text-align:center"><img alt="해외 북 인플루언서" height="350" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3379" style="display:inline-block; vertical-align:middle" width="249" /></div>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:20px">
+												<h5 style="font-family:'Noto Sans KR',sans-serif; font-size:14px; font-weight:bold; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0">🌏해외&nbsp;북 인플루언서의 추천</h5>
+
+												<p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:11px; line-height:1.5; margin-bottom:12px; margin-left:0; margin-right:0; margin-top:0">해외 북 인플루언서를 중심으로 한국 문학이 하나의 트렌드로 확고히 자리 잡고 있는 모습이 고무적입니다.</p>
+												<a href="https://www.instagram.com/reel/DUj1HMqkxfp/" style="font-family: 'Noto Sans KR', sans-serif; font-size: 10px; color: #9ca3af; text-decoration: none;" target="_blank">Nique ✨ (@chroniqled)</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+									<td style="padding-left:15px; vertical-align:top" width="50%">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-radius:8px; border:1px solid #f3f4f6; width:100%">
+										<tbody>
+											<tr>
+												<td style="background-color:#f9fafb; padding:15px; text-align:center"><img alt="표지 디자인 비교" height="350" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3376" width="219" /></td>
+											</tr>
+											<tr>
+												<td style="padding:20px">
+												<h5 style="font-family:'Noto Sans KR',sans-serif; font-size:14px; font-weight:bold; margin-bottom:10px; margin-left:0; margin-right:0; margin-top:0">🔍한국-&nbsp;일본&nbsp;책 표지 비교</h5>
+
+												<p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:11px; line-height:1.5; margin-bottom:12px; margin-left:0; margin-right:0; margin-top:0">같은 소설이라도 국가별로 어떤 시각적 차이를 보이는지를 분석한 게시물이 독자들의 큰 호응을 얻고 있어요.</p>
+												<a href="https://www.instagram.com/p/DUWmOu5E-oh/" style="font-family: 'Noto Sans KR', sans-serif; font-size: 10px; color: #9ca3af; text-decoration: none;" target="_blank">여르미 도서관 📖</a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- Section: 출판계 일정 -->
+					<tr>
+						<td style="border-bottom:1px solid #f3f4f6; padding:60px 40px">
+						<div style="margin-bottom:40px; text-align:center">
+                            <strong style="border-bottom:2px solid #a855f7; color:#1a1a1a; display:inline-block; font-family:'Noto Sans KR',sans-serif; font-size:18px; font-weight:bold; padding-bottom:8px; vertical-align: middle;">📅 출판계 일정</strong> 
+                            <label class="toggle-btn" for="industry-cb" style="margin-left: 10px; vertical-align: middle;"><span class="open-text">일정 보기</span> <span class="close-text" style="display:none">일정 접기</span> </label>
+                        </div>
+
+						<div style="text-align:left">
+                            <input id="industry-cb" type="checkbox" />
+                            <div id="industry-content">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                    <tbody>
+                                        <!-- Group Category Header -->
+                                        <tr>
+                                            <td style="padding-bottom:16px"><strong style="color:#111827; font-family:'Noto Serif KR',serif; font-size:18px">단체 일정</strong> </td>
+                                        </tr>
+                                        <!-- 1월 19일 (단체) -->
+                                        <tr>
+                                            <td style="padding-bottom:12px">
+                                            <p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:bold; margin:0 0 8px 0">1월 19일(월)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-group">단체</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">임원선거 관리위원회 2차 회의</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">14:00 | 4층 회의실</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 2월 3일 (단체) -->
+                                        <tr>
+                                            <td style="padding-bottom:12px">
+                                            <p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:bold; margin:0 0 8px 0">2월 3일(화)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%; margin-bottom:8px">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-group">단체</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">제35차 실행이사회</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">15:00 | 4층 회의실</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-group">단체</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">2025 회계연도 제2차 이사회</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">16:00 | 지하 강당</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 2월 10일 (단체) -->
+                                        <tr>
+                                            <td style="padding-bottom:32px">
+                                            <p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:bold; margin:0 0 8px 0">2월 10일(화)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%; margin-bottom:8px">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-group">단체</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">임원선거 관리위원회 3차 회의</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">12:00 | 서교동</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-group">단체</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">제27차 정기총회 및 제14대 임원 선거</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">14:00 | 아만티호텔 서울(서교동)</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- Other Category Header -->
+                                        <tr>
+                                            <td style="border-top:1px solid #f3f4f6; padding-top:32px; padding-bottom:16px"><strong style="color:#111827; font-family:'Noto Serif KR',serif; font-size:18px">기타 일정</strong> </td>
+                                        </tr>
+                                        <!-- 기타 일정 1 -->
+                                        <tr>
+                                            <td style="padding-bottom:12px">
+                                            <p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:bold; margin:0 0 8px 0">2월 19일(목) ～ 3월 6일(금)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#eff6ff; border-radius:8px; width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-industry">기타</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">2026년 찾아가는 하노이·방콕 도서전 참가사 및 위탁도서 모집</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">마감 16:00 | 한국출판문화산업진흥원 | <a href="https://www.kpipa.or.kr/p/g1_2/2007" style="color:#2563eb; text-decoration:underline" target="_blank">공고 보기</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- 기타 일정 2 -->
+                                        <tr>
+                                            <td style="padding-bottom:12px">
+                                            <p style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:13px; font-weight:bold; margin:0 0 8px 0">2월 19일(목) ～ 3월 5일(목)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#eff6ff; border-radius:8px; width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="padding:16px">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="vertical-align:middle"><span class="badge badge-industry">기타</span> <strong style="color:#1a1a1a; font-family:'Noto Sans KR',sans-serif; font-size:14px">2026년 찾아가는 도서전 위탁도서 수출전문가 모집</strong> </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="color:#6b7280; font-family:'Noto Sans KR',sans-serif; font-size:12px; padding-top:4px">마감 16:00 | 문의: 063-219-2865 | <a href="https://www.kpipa.or.kr/p/g1_2/2006" style="color:#2563eb; text-decoration:underline" target="_blank">공고 보기</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+						</td>
+					</tr>
+					<!-- Footer -->
+					<tr>
+						<td align="center" style="background-color:#ffffff; padding:60px 40px">
+						<h2 style="font-family:'Noto Serif KR',serif; font-size:20px; font-weight:bold; margin-bottom:24px; margin-left:0; margin-right:0; margin-top:0; text-align:center;">에디터의 맺음말</h2>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="background-color:#f9fafb; border-radius:8px; width:100%; margin: 0 auto;">
+							<tbody>
+								<tr>
+									<td style="color:#374151; font-family:'Noto Sans KR',sans-serif; font-size:14px; line-height:1.7; padding:30px; text-align:center;"><strong>격변하는 기술과 매체의 흐름 속에서도, 텍스트의 본질과 출판의 고유한 가치를 지켜내려는 현장의 움직임은 여전히 선명하고 단단합니다.&nbsp;출판의 변화를 알리는 다양한 소식들로 다시 찾아뵙겠습니다. ✨</strong> </td>
+								</tr>
+							</tbody>
+						</table>
+
+                        <div style="margin-top: 40px; text-align: center;">
+                            <a href="https://forms.gle/uMaMbQRUYveHKxEd7" class="feedback-btn-bottom" target="_blank">뉴스레터 피드백 남기기</a>
+                        </div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="border-top:1px solid #e5e7eb; margin-top:40px; width:100%">
+							<tbody>
+								<tr>
+									<td style="color:#9ca3af; font-family:'Noto Sans KR',sans-serif; font-size:11px; padding-top:40px; text-align:center;">
+									<p style="margin-bottom:16px; margin-left:0; margin-right:0; margin-top:0">본 메일은 한국출판인회의 회원사 및 구독자를 대상으로 발송되었습니다.</p>
+                                    <p style="margin-bottom:0; margin-left:0; margin-right:0; margin-top:0"><a href="#" style="color: #9ca3af; text-decoration: none;" target="_blank">웹에서 보기</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Copyright -->
+
+			<p style="color:#9ca3af; font-family:'Noto Sans KR',sans-serif; font-size:11px; letter-spacing:1px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:40px; text-align:center;">&copy; 2026 KOPUS NEWSLETTER. All Rights Reserved.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
