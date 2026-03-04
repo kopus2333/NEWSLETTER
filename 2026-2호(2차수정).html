@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚 책-업 (Check-UP)</title>
+    <style type="text/css">
+        /* 리셋 스타일 */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
+        table { border-collapse: collapse !important; }
+        
+        body { 
+            height: 100% !important; 
+            margin: 0 !important; 
+            padding: 0 !important; 
+            width: 100% !important; 
+            background-color: #FDFCF8; 
+            background-image: linear-gradient(135deg, #FDECF2 0%, #FDF8E1 50%, #E0F4E8 100%);
+        }
+
+        /* 커피 챗 접어두기 CSS */
+        #coffee-cb { display: none !important; }
+        #coffee-content { display: none; max-height: 0; overflow: hidden; }
+        #coffee-cb:checked + #coffee-content { display: block !important; max-height: none !important; }
+        #coffee-cb:checked ~ div label .open-text { display: none !important; }
+        #coffee-cb:checked ~ div label .close-text { display: inline-block !important; }
+
+        /* 통일된 버튼 스타일 */
+        .btn-unified {
+            display: inline-block;
+            background-color: #C4B5FD; /* 네오 브루탈리즘 고유 컬러 (퍼플) */
+            color: #1a1a1a !important;
+            text-decoration: none;
+            border: 2px solid #1a1a1a;
+            border-radius: 999px;
+            font-weight: bold;
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+            cursor: pointer;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border: 1.5px solid #1a1a1a;
+            border-radius: 999px;
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-right: 6px;
+            box-shadow: 1px 1px 0px #1a1a1a;
+        }
+    </style>
+</head>
+<body style="background-color: #FDFCF8; margin: 0; padding: 0;">
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%; background-color: #FDFCF8;">
+	<tbody>
+		<tr>
+			<td align="center" style="padding:40px 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:24px; overflow:hidden; box-shadow:8px 8px 0px #1a1a1a; max-width:640px; width:100%;">
+                    <tbody>
+					<tr>
+						<td align="center" style="border-bottom:2px solid #1a1a1a; padding:48px 30px; background-color: #ffffff;">
+						    <h1 style="color:#1a1a1a; font-family:'Pretendard', 'Noto Sans KR', sans-serif; font-size:32px; font-weight:900; letter-spacing:-1px; margin:0;">📚 책-업 (Check-UP)</h1>
+						    <p style="color:#4A4A4A; font-family:'Pretendard', sans-serif; font-size:13px; font-weight:bold; letter-spacing:2px; margin-top:8px; text-transform:uppercase">Korea Publishers Society | 제2호(2026. 03. 04)</p>
+						</td>
+					</tr>
+                    <tr>
+						<td align="center" style="background-color:#FFFdfa; border-bottom:2px solid #1a1a1a; padding:60px 40px">
+						    <h2 style="color:#1a1a1a; font-family:'Pretendard', 'Noto Sans KR', sans-serif; font-size:26px; font-weight:800; line-height:1.4; margin:0 0 24px 0">위기에 더 필요한 것은?</h2>
+						    <div style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.6; margin:0 auto; max-width:480px">
+						        <p style="margin:0;">위기라는 단어가 어느덧 일상의 일부가 된 것 같아 마음 한구석이 무거워지는 요즘입니다. 출판계 역시 급변하는 환경 속에서 저마다의 해법을 찾기 위해 분투하고 있어요. 두 출판 단체의 의미 있는 첫 만남 소식과 함께, 우리가 잊고 지냈던 독서의 본질적인 가치를 다시금 되새겨보는 이야기들을 모아보았습니다! 어려운 시기일수록 서로의 손을 맞잡는 온기가 출판인 여러분께 큰 힘이 되기를 진심으로 바랍니다.</p>
+						    </div>
+						</td>
+					</tr>
+                    <tr>
+						<td style="border-bottom:2px solid #1a1a1a; padding:60px 40px; background-color: #ffffff;">
+						    <div style="margin-bottom:40px; text-align:center">
+                                <strong style="background-color:#A6F4D0; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; padding:10px 32px">📢 단체 소식</strong> 
+                            </div>
+						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:4px 4px 0px #1a1a1a; width:100%">
+							    <tbody>
+								    <tr>
+									    <td align="center" style="padding:32px 24px">
+                                            <img alt="대한출판문화협회·한국출판인회의 신임 회장 만남" src="https://imgur.com/WSKtpvw.png" style="border:2px solid #1a1a1a; border-radius:12px; display:inline-block; width:100%; max-width:500px; height:auto; object-fit:contain; margin-bottom:24px" />
+									        <h3 style="font-family:'Pretendard', sans-serif; font-size:20px; font-weight:bold; line-height:1.4; margin:0 0 8px 0">대한출판문화협회·한국출판인회의 신임 회장 첫 만남</h3>
+									        <p style="color:#666666; font-family:'Pretendard', sans-serif; font-size:14px; margin:0 0 24px 0">"출판계 통합 리더십으로 협력 다짐"</p>
+                                            <div style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.7; text-align:justify; padding-top:20px; border-top:2px dashed #1a1a1a;">
+                                                <p style="margin:0;">김태헌 대한출판문화협회 신임 회장과 홍영완 한국출판인회의 신임 회장이 취임 후 처음으로 마주 앉아 출판의 미래를 논의했어요! 두 수장은 <strong>출판계 통합 리더십</strong>의 필요성에 깊이 공감하며 생태계의 건강한 발전을 위해 긴밀히 협력하기로 뜻을 모았답니다. 특히 <strong>AI 기술 대응 제도 마련</strong>부터 <strong>도서정가제 개선 방향</strong>까지, 출판계가 당면한 핵심 현안들을 함께 해결해 나갈 예정이에요. 이번 만남을 시작으로 정기적인 교류를 추진하며 출판인의 권익 향상과 지속 가능한 시장 조성을 위해 한 목소리를 낼 예정입니다.</p>
+                                                <div style="margin-top:32px; text-align:center">
+                                                    <a href="https://www.kopus.org/info-noticelist/?uid=1387&mod=document" class="btn-unified" style="padding: 12px 28px; font-size: 14px; box-shadow: 3px 3px 0px #1a1a1a;" target="_blank">자세히 보기</a>
+                                                </div>
+                                            </div>
+									    </td>
+								    </tr>
+							    </tbody>
+						    </table>
+						</td>
+					</tr>
+                    <tr>
+						<td style="background-color:#F2F6F9; border-bottom:2px solid #1a1a1a; padding:60px 40px">
+						    <div style="margin-bottom:40px; text-align:center">
+                                <strong style="background-color:#E5E7EB; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:16px; font-weight:bold; padding:8px 24px">📰 출판 소식</strong> 
+                                <p style="font-size: 14px; color: #555; margin-top: 12px;">💡 변화하는 독서 지형도와 우리가 잊지 말아야 할 종이책의 가치를 관찰해 보아요!</p>
+                            </div>
+						    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                <tbody>
+								    <tr>
+									    <td style="padding-bottom:24px">
+                                            <div style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:3px 3px 0px #1a1a1a; padding:24px;">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:12px; font-weight:900; letter-spacing:1px; margin:0 0 8px 0">[세계일보]</p>
+                                                <h4 style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; margin:0 0 12px 0">‘출판대국’ 日 캠퍼스서도 종이책 대신 AI…</h4>
+                                                <p style="color:#4b5563; font-family:'Pretendard', sans-serif; font-size:14px; line-height:1.6; margin:0 0 16px 0">출판대국이라 불리던 일본의 대학생들이 한 달에 쓰는 책값이 1,000엔 미만으로 떨어졌다는 분석 결과가 나왔습니다. 1970년대 조사 이후 처음으로 월 도서비 지출이 1,000엔 선 아래로 내려갔다는데요. 응답자의 절반 이상은 하루 독서 시간이 전혀 없다고 답했는데, 이는 고물가로 인한 생활비 절약과 무관하지 않은 것으로 보여요. 출판대국으로 일컬어지는 일본의 독서 문화 변화를 주의 깊게 살펴볼 필요가 있겠어요.</p>
+                                                <a href="https://www.segye.com/newsView/20260225508198?OutUrl=naver" style="display: inline-block; font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: bold; color: #8B8DF1; text-decoration: underline;" target="_blank">읽으러 가기</a>
+                                            </div>
+                                        </td>
+								    </tr>
+								    <tr>
+									    <td style="padding-bottom:24px">
+                                            <div style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:3px 3px 0px #1a1a1a; padding:24px;">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:12px; font-weight:900; letter-spacing:1px; margin:0 0 8px 0">[코메디닷컴]</p>
+                                                <h4 style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; margin:0 0 12px 0">잠들기 전 스마트폰 대신 ‘이것’ 하면 꿀잠 잔다?</h4>
+                                                <p style="color:#4b5563; font-family:'Pretendard', sans-serif; font-size:14px; line-height:1.6; margin:0 0 16px 0">잠들기 전 스마트폰 대신 책을 집어 드는 작은 습관이 수면의 질을 개선한다는 관찰 결과가 발표되었습니다! 연구 결과에 따르면 취침 전 독서를 한 집단의 42%가 수면 개선을 경험하며 건강한 수면 주기를 되찾은 것으로 나타난다고 합니다. 다만 긴장감이 넘치는 소재보다는 차분한 소설이나 에세이를 15분 내외로 가볍게 읽는 것이 가장 효과적인 방법이라고 하네요!(누구보다 책 많이 읽는 출판인 여러분, 좋은 꿈 꾸시길...😅)</p>
+                                                <a href="https://kormedi.com/2792823/" style="display: inline-block; font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: bold; color: #8B8DF1; text-decoration: underline;" target="_blank">읽으러 가기</a>
+                                            </div>
+                                        </td>
+								    </tr>
+								    <tr>
+									    <td style="padding-bottom:40px">
+                                            <div style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:3px 3px 0px #1a1a1a; padding:24px;">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:12px; font-weight:900; letter-spacing:1px; margin:0 0 8px 0">[한국일보]</p>
+                                                <h4 style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; margin:0 0 12px 0">한국 소설은 여성 작가 놀이터? 독자의 선택은...</h4>
+                                                <p style="color:#4b5563; font-family:'Pretendard', sans-serif; font-size:14px; line-height:1.6; margin:0 0 16px 0">주요 문학상의 수상자 전원이 여성이거나 베스트셀러 구매자의 70% 이상이 여성이라고 합니다. 다만 이는 단순히 숫자의 문제를 넘어 돌봄, 젠더, 퀴어 등 우리 사회가 놓치고 있었던 이야기들이 독자들의 마음에 닿았기 때문입니다. 이제는 작가의 성별이라는 틀에서 벗어나 각 작품이 우리 삶에 어떤 질문을 던지고 어떤 울림을 주는지 그 본질에 집중해야 할 시점이 아닐까요.</p>
+                                                <a href="https://www.hankookilbo.com/news/article/amp/A2026022210260000613" style="display: inline-block; font-family: 'Pretendard', sans-serif; font-size: 13px; font-weight: bold; color: #8B8DF1; text-decoration: underline;" target="_blank">읽으러 가기</a>
+                                            </div>
+                                        </td>
+								    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="background-color: #FFF4CC; border-radius: 16px; border: 2px solid #1a1a1a; padding: 32px; box-shadow: 6px 6px 0px #1a1a1a;">
+                                                <h4 style="color: #1a1a1a; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; font-size: 20px; font-weight: 800; margin-bottom: 20px; margin-top: 0; display:inline-block; border-bottom: 3px solid #1a1a1a; padding-bottom: 4px;">[Z👀m In&Out] 다시, 책으로</h4>
+                                                <div style="color: #333333; font-family: 'Pretendard', sans-serif; font-size: 14px; line-height: 1.8;">
+                                                    <p style="margin-top: 0; margin-bottom: 16px;">인공지능이 문장을 만들고 요약까지 도맡는 '편리한' 시대에 살고 있지만, <a href="https://www.chosun.com/national/education/2026/02/24/EENO3AQS3REOVHL3XE4M7IKD3M/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" style="color: #1a1a1a; text-decoration: underline; font-weight: 600;" target="_blank"> 정작 그 글자를 훑는 우리의 시선은 갈 곳을 잃고 헤매는 중🔗</a>이 아닐까요. <a href="https://www.womennews.co.kr/news/articleView.html?idxno=274154" style="color: #1a1a1a; text-decoration: underline; font-weight: 600;" target="_blank"> 독서를 국가적 의제로 격상하려는 움직임이 시작된 지금🔗</a>, 우리는 단순히 '성장과 해법'이라는 기능적 측면을 넘어 인간을 풍요롭게 만드는 사유의 통로로서 독서를 다시 바라보는 일이 필요합니다. <a href="https://heypop.kr/n/133997/" style="color: #1a1a1a; text-decoration: underline; font-weight: 600;" target="_blank"> 휴대폰을 잠시 놓고, 책의 질감과 사유에 몰입하는 그 낯선 '시간의 감각'을 회복하는 일🔗</a>은 우리에게 언제나 필요한 일이니까요. 📖</p>
+                                                    <div style="text-align: center; margin-top: 24px;">
+                                                        <a href="https://forms.gle/7GbFEyhCi3GKLP8G6" class="btn-unified" style="padding: 12px 24px; font-size: 14px; box-shadow: 3px 3px 0px #1a1a1a;" target="_blank">의견 전달하기</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+							    </tbody>
+						    </table>
+						</td>
+					</tr>
+                    <tr>
+						<td style="border-bottom:2px solid #1a1a1a; padding:60px 40px; background-color: #ffffff;">
+						    <div style="margin-bottom:40px; text-align:center"><strong style="background-color:#FDE047; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:16px; font-weight:bold; padding:8px 24px">☕ 출판사 커피 챗</strong> </div>
+						    
+                            <div style="background-color:#8B8DF1; border:2px solid #1a1a1a; border-radius:16px; padding:32px 20px; margin-bottom:24px; box-shadow:5px 5px 0px #1a1a1a; width:100%; box-sizing: border-box; text-align: center;">
+                                <h4 style="font-family:'Pretendard', sans-serif; font-size:22px; font-weight:bold; line-height:1.4; margin:0; color:#1a1a1a;">도서출판 멍멍,<br />새로운 독서 경험을 설계하다</h4>
+                            </div>
+
+						    <input id="coffee-cb" type="checkbox" />
+						    <div id="coffee-content">
+                                <div style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; padding:24px; box-shadow:4px 4px 0px #1a1a1a; margin-bottom:20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:30px; width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right:5px; text-align:center;" width="50%"><img alt="출판사 전경 1" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3364" style="border:2px solid #1a1a1a; border-radius:12px; display:inline-block; width:100%; max-width:240px; height:180px; object-fit:cover;" /></td>
+                                                <td style="padding-left:5px; text-align:center;" width="50%"><img alt="출판사 전경 2" src="https://directsend.co.kr/index.php/mail_report_api/image_down/VTcwNzIxMQ/3367" style="border:2px solid #1a1a1a; border-radius:12px; display:inline-block; width:100%; max-width:240px; height:180px; object-fit:cover;" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.8; text-align:left">
+                                                    <div style="margin-bottom:24px; border-bottom:1px solid #EAE8E3; padding-bottom: 20px;">
+                                                        <p style="color:#1a1a1a; font-weight:600; margin-bottom:8px;">☕ "안녕하세요! 지금 어디서 어떤 음료를 즐기고 계신가요?"</p>
+                                                        <p style="margin:0; color:#555;">저는 에디터 A입니다. 로스 커피에서 산미가 있는 따뜻한 아메리카노를 마시고 있어요.</p>
+                                                    </div>
+                                                    <div style="margin-bottom:24px; border-bottom:1px solid #EAE8E3; padding-bottom: 20px;">
+                                                        <p style="color:#1a1a1a; font-weight:600; margin-bottom:8px;">📖 "요즘 곁에 두고 읽으시는 책 한 권 소개해 주시겠어요?"</p>
+                                                        <p style="margin:0; color:#555;">가즈오 이시구로의 &lt;클라라와 태양&gt;. 친구가 선물해서 읽고 있는데, 홍한별 선생님의 번역이 인상적이에요.</p>
+                                                    </div>
+                                                    <div style="margin-bottom:24px; border-bottom:1px solid #EAE8E3; padding-bottom: 20px;">
+                                                        <p style="color:#1a1a1a; font-weight:600; margin-bottom:8px;">🏢 "우리 출판사 소개와 맡고 계신 역할에 대해 알려주세요."</p>
+                                                        <p style="margin:0; color:#555;">저희 멍멍 출판사는 세상에 필요한 질문을 던지는 작은 책들을 만드는 것을 모토로 2026년에 설립되었어요. 모든 구성원이 디자인 감각을 공유하며 개성 있는 판형을 시도한다는 게 특장점입니다.</p>
+                                                    </div>
+                                                    <div style="margin-bottom:24px; border-bottom:1px solid #EAE8E3; padding-bottom: 20px;">
+                                                        <p style="color:#1a1a1a; font-weight:600; margin-bottom:8px;">🔥 "요즘 가장 에너지를 쏟고 계신 업무는 무엇인가요?"</p>
+                                                        <p style="margin:0; color:#555;">올여름에 열릴 멍멍북페어 기획에 힘을 쏟고 있어요!</p>
+                                                    </div>
+                                                    <div style="margin-bottom:32px">
+                                                        <p style="color:#1a1a1a; font-weight:600; margin-bottom:8px;">✨ "독자들을 위해 준비 중인 신간 소식도 살짝 들려주세요."</p>
+                                                        <p style="margin:0; color:#555;">'멍멍이와 야옹이' 서로 다른 성향을 가진 두 동물의 우정 이야기입니다. 현재 최종교를 보고 있습니다. 많은 관심 부탁 드려요.</p>
+                                                    </div>
+                                                    <p style="color:#8B8DF1; font-weight:600; margin:0; text-align:center; font-size: 16px;">"오늘 이야기 나누어 주셔서 감사합니다. :)"</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div style="margin-top: 32px; padding-top: 24px; border-top: 2px dashed #EAE8E3; text-align: center;">
+                                        <p style="color:#1a1a1a; font-weight:600; font-size: 14px; line-height: 1.6; margin:0;">
+                                            ☕ '출판사 커피 챗'에 함께할 회원사 임직원을 초대합니다!<br>
+                                            커피 챗에 참여하시는 분들께는 커피 쿠폰(스타벅스 0만원 상당)을 드리니<br>
+                                            뉴스레터 하단 피드백 페이지를 통해 많은 신청 바랍니다! ✨
+                                        </p>
+                                    </div>
+                                </div>
+						    </div>
+						    <div style="margin-top:20px; text-align:center">
+                                <label class="btn-unified" for="coffee-cb" id="toggle-label" style="padding: 10px 20px; font-size: 13px; box-shadow: 3px 3px 0px #1a1a1a;">
+                                    <span class="open-text">커피 챗 전문 읽기</span> 
+                                    <span class="close-text" style="display:none">커피 챗 접기</span> 
+                                </label>
+                            </div>
+						</td>
+					</tr>
+                    <tr>
+						<td style="background-color:#F2F6F9; border-bottom:2px solid #1a1a1a; padding:60px 40px">
+						    <div style="margin-bottom:40px; text-align:center"><strong style="background-color:#93C5FD; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:16px; font-weight:bold; padding:8px 24px">💡 인사이트</strong> </div>
+						    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+							    <tbody>
+								    <tr>
+									    <td style="padding-right:10px; padding-bottom:20px; vertical-align:top" width="50%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%">
+										        <tbody>
+											        <tr>
+												        <td style="padding:15px; text-align:center">
+												            <div style="text-align:center"><img alt="추천 폰트" src="https://imgur.com/KHnsCyi.png" style="border:2px solid #1a1a1a; border-radius:12px; display:inline-block; width:100%; height:180px; object-fit:cover;" /></div>
+												        </td>
+											        </tr>
+											        <tr>
+												        <td style="padding:20px; border-top:2px solid #1a1a1a;">
+												            <h5 style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 10px 0">디자이너들의 추천폰트.zip</h5>
+												            <p style="color:#555555; font-family:'Pretendard', sans-serif; font-size:12px; line-height:1.5; margin:0 0 16px 0">큐레터가 요즘 디자이너들이 쓰는 폰트를 소개하고 있어요. 여러분의 홍보 콘텐츠에 한번 써보시면 어떨까요?</p>
+												            <a href="https://www.instagram.com/p/DTPVa6aj9UG/" class="btn-unified" style="padding: 6px 14px; font-size: 11px; box-shadow: 2px 2px 0px #1a1a1a;" target="_blank">게시물 보기</a>
+                                                        </td>
+											        </tr>
+										        </tbody>
+									        </table>
+									    </td>
+									    <td style="padding-left:10px; padding-bottom:20px; vertical-align:top" width="50%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%">
+										        <tbody>
+											        <tr>
+												        <td style="padding:15px; text-align:center">
+                                                            <div style="text-align:center"><img alt="딸깍 출판" src="https://imgur.com/7wklN3G.png" style="border:2px solid #1a1a1a; border-radius:12px; display:inline-block; width:100%; height:180px; object-fit:cover;" /></div>
+                                                        </td>
+											        </tr>
+											        <tr>
+												        <td style="padding:20px; border-top:2px solid #1a1a1a;">
+												            <h5 style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 10px 0">딸깍 출판은 출판하지 않는다</h5>
+												            <p style="color:#555555; font-family:'Pretendard', sans-serif; font-size:12px; line-height:1.5; margin:0 0 16px 0">인공지능과 리터러시를 고찰해 온 김성우 선생님의 글입니다. ‘딸깍’으로 사라지는 출판의 본질은 무엇일까요?</p>
+												            <a href="https://www.instagram.com/p/DUPQdoECWRj/" class="btn-unified" style="padding: 6px 14px; font-size: 11px; box-shadow: 2px 2px 0px #1a1a1a;" target="_blank">게시물 보기</a>
+                                                        </td>
+											        </tr>
+										        </tbody>
+									        </table>
+									    </td>
+								    </tr>
+							    </tbody>
+						    </table>
+						</td>
+					</tr>
+                    <tr>
+						<td style="border-bottom:2px solid #1a1a1a; padding:60px 40px; background-color: #ffffff;">
+						    <div style="margin-bottom:40px; text-align:center">
+                                <strong style="background-color:#FCA5A5; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:16px; font-weight:bold; padding:8px 24px;">📅 출판계 일정</strong> 
+                            </div>
+						    <div style="text-align:left">
+                                <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding-bottom:16px"><strong style="color:#1a1a1a; font-family:'Noto Serif KR',serif; font-size:20px; border-bottom: 2px solid #1a1a1a; padding-bottom: 4px;">단체 일정</strong> </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom:32px">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 8px 0">3월 19일(목)</p>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%; margin-bottom:12px">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding:16px">
+                                                                <span class="badge" style="background-color:#E2E4FF;">단체</span> <strong style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:15px">2026 회계연도 제1차 이사회</strong>
+                                                                <p style="color:#666666; font-size:13px; margin-top:8px;">14:00 | 지하 강당</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding:16px">
+                                                                <span class="badge" style="background-color:#E2E4FF;">단체</span> <strong style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:15px">제1차 실행이사회</strong>
+                                                                <p style="color:#666666; font-size:13px; margin-top:8px;">16:00 | 4층 회의실</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-top:24px; padding-bottom:16px"><strong style="color:#1a1a1a; font-family:'Noto Serif KR',serif; font-size:20px; border-bottom: 2px solid #1a1a1a; padding-bottom: 4px;">기타 일정</strong> </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom:16px">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 8px 0">3월 18일(수)</p>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%; margin-bottom:12px">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding:16px">
+                                                                <span class="badge" style="background-color:#FFC5A1;">세미나</span> <strong style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:15px">제5회 출판 핫이슈 세미나 'K-BOOK 해외수출 전략'</strong>
+                                                                <p style="color:#666666; font-size:13px; margin-top:8px;">14:00-17:00 | 한국출판문화진흥재단 | <a href="http://www.tkpf.or.kr/contents/community_notice_view.php?no=131" style="color:#8B8DF1; font-weight:bold; text-decoration:underline" target="_blank">공고 보기</a></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom:16px">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 8px 0">3월 19일(목)</p>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding:16px">
+                                                                <span class="badge" style="background-color:#A6F4D0;">행사</span> <strong style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:15px">2026 문학책의 해 선포식(책의해 추진단)</strong>
+                                                                <p style="color:#666666; font-size:13px; margin-top:8px;">15:00 | 책의해 추진단 | 이호철북콘서트홀</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+						</td>
+					</tr>
+                    <tr>
+						<td align="center" style="background-color:#FFFdfa; padding:60px 40px">
+						    <h2 style="color:#1a1a1a; font-family:'Pretendard', 'Noto Sans KR', sans-serif; font-size:24px; font-weight:800; margin-bottom:24px; text-align:center;">맺음말</h2>
+						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:5px 5px 0px #1a1a1a; width:100%;">
+							    <tbody>
+								    <tr>
+									    <td style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.7; padding:32px; text-align:center; font-weight:600;">
+                                            <p style="margin: 0 0 16px 0;">봄이 오면 떠오르는 말들이 있습니다. 봄동, 새순, 포근하다, 푹하다, 움트다... 심보선 시인의 시처럼 '봄에서 써야지 속으로 생각했던' 것이 있다면, 다가온 봄날에 맘껏 써보면 어떨까요. 겨우내 움츠렸던 새싹들이 기지개를 켜듯 출판인 여러분의 모든 계획도, 새로운 책들도 눈부시게 피어나길 응원합니다.</p>
+                                            <p style="margin: 0;">우리는 다음에 다시 만나요!✨</p>
+                                        </td>
+								    </tr>
+							    </tbody>
+						    </table>
+                            <div style="margin-top: 48px; text-align: center;">
+                                <a href="https://forms.gle/uMaMbQRUYveHKxEd7" class="btn-unified" style="padding: 14px 28px; font-size: 15px; box-shadow: 4px 4px 0px #1a1a1a;" target="_blank">뉴스레터 피드백 남기기</a>
+                            </div>
+						    <table border="0" cellpadding="0" cellspacing="0" style="border-top:2px solid #1a1a1a; margin-top:48px; width:100%">
+							    <tbody>
+								    <tr>
+									    <td style="color:#666666; font-family:'Pretendard', sans-serif; font-size:12px; font-weight:bold; padding-top:40px; text-align:center; line-height: 1.6;">
+                                            <div style="margin-bottom: 24px;">
+                                                <a href="https://www.kopus.org" target="_blank">
+                                                    <img src="https://imgur.com/X2SfM3h.png" alt="한국출판인회의 로고" style="display: inline-block; max-width: 140px; height: auto;" onerror="this.src='https://via.placeholder.com/140x40?text=KOPUS'"/>
+                                                </a>
+                                            </div>
+									        <p style="margin:0 0 8px 0; color:#1a1a1a;">본 메일은 한국출판인회의 회원사를 대상으로 발송되었습니다.</p>
+                                            <p style="margin:0 0 24px 0;"><a href="https://www.kopus.org/kopusnewsletter/" style="color: #666666; text-decoration: underline;" target="_blank">웹에서 보기</a></p>
+                                            <p style="margin:0 0 4px 0; color:#888888;">&copy; 2026 KOPUS</p>
+                                            <p style="margin:0; color:#888888;">www.kopus.org | 02-3142-2334</p>
+									    </td>
+								    </tr>
+							    </tbody>
+						    </table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
