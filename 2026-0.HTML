@@ -9,7 +9,8 @@
         body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
         table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
         img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
-        table { border-collapse: collapse !important; }
+        /* border-collapse에 !important가 있으면 라운드가 무시될 수 있으므로 !important 제거 */
+        table { border-collapse: collapse; }
         
         body { 
             height: 100% !important; 
@@ -26,12 +27,12 @@
 	<tbody>
 		<tr>
 			<td align="center" style="padding:40px 10px;">
-                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:24px; overflow:hidden; box-shadow:8px 8px 0px #1a1a1a; max-width:640px; width:100%; border-collapse: collapse;">
+                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:24px; overflow:hidden; box-shadow:8px 8px 0px #1a1a1a; max-width:640px; width:100%; border-collapse: separate; border-spacing: 0;">
                     <tbody>
 					<tr>
 						<td align="center" style="border-bottom:2px solid #1a1a1a; padding:48px 30px; background-color: #ffffff;">
 						    <h1 style="color:#1a1a1a; font-family:'Pretendard', 'Noto Sans KR', sans-serif; font-size:32px; font-weight:900; letter-spacing:-1px; margin:0;">📚 책-업 (Check-UP)</h1>
-						    <p style="color:#4A4A4A; font-family:'Pretendard', sans-serif; font-size:13px; font-weight:bold; letter-spacing:2px; margin-top:8px; text-transform:uppercase">Korea Publishers Society | 제0호(2026. 03. 23)</p>
+						    <p style="color:#4A4A4A; font-family:'Pretendard', sans-serif; font-size:13px; font-weight:bold; letter-spacing:2px; margin-top:8px; text-transform:uppercase">Korea Publishers Society | 제0호(2026. 03. 24.)</p>
                             <div style="margin-top: 12px;">
                                 <a href="https://www.kopus.org/kopusnewsletter/" style="color:#888888; font-family:'Pretendard', sans-serif; font-size:12px; text-decoration:underline;" target="_blank">웹에서 보기</a>
                             </div>
@@ -50,7 +51,7 @@
 						    <div style="margin-bottom:40px; text-align:center">
                                 <strong style="background-color:#A6F4D0; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#1a1a1a; display:inline-block; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; padding:10px 32px">📢 단체 소식</strong> 
                             </div>
-						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:4px 4px 0px #1a1a1a; width:100%; border-collapse: collapse;">
+						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:4px 4px 0px #1a1a1a; width:100%; border-collapse: separate; border-spacing: 0; overflow: hidden;">
 							    <tbody>
 								    <tr>
 									    <td align="center" style="padding:32px 24px">
@@ -73,7 +74,7 @@
                                                 <p style="color:#666666; font-family:'Pretendard', sans-serif; font-size:13px; margin:0 0 12px 0; font-weight:600;">AI미래전략위원회·강소출판위원회 신설</p>
                                                 <p style="color:#333333; font-family:'Pretendard', sans-serif; font-size:14px; line-height:1.6; margin:0 0 16px 0;">3월 19일, 2026 회계연도 제1차 이사회를 개최해 서울북인스티튜트(SBI) 원장, 부회장 3인, 실행이사 10인으로 이루어진 임기 3년의 제14대 집행부를 구성하고 공식 출범했습니다! 자세한 내용은 링크를 확인해 주세요. </p>
                                                 <div style="text-align:right;">
-                                                    <a href="추후 안내" style="color:#8B8DF1; font-family:'Pretendard', sans-serif; font-size:13px; font-weight:bold; text-decoration:underline;" target="_blank">자세히 보기</a>
+                                                    <a href="https://www.kopus.org/kps-organization/" style="color:#8B8DF1; font-family:'Pretendard', sans-serif; font-size:13px; font-weight:bold; text-decoration:underline;" target="_blank">자세히 보기</a>
                                                 </div>
                                             </div>
                                         </td>
@@ -91,8 +92,17 @@
                                             </div>
                                         </td>
                                     </tr>
+							    </tbody>
+						    </table>
+
+                            <!-- SBI 세부 섹션 시작 -->
+                            <div style="margin-top:60px; margin-bottom:40px; text-align:center">
+                                <strong style="background-color:#1a1a1a; border:2px solid #1a1a1a; border-radius:999px; box-shadow:3px 3px 0px #1a1a1a; color:#ffffff; display:inline-block; font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; padding:10px 32px">📕 서울북인스티튜트</strong> 
+                            </div>
+                            <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:4px 4px 0px #1a1a1a; width:100%; border-collapse: separate; border-spacing: 0; overflow: hidden;">
+                                <tbody>
                                     <tr>
-                                        <td align="center" style="padding:0 24px 16px 24px;">
+                                        <td align="center" style="padding:32px 24px 16px 24px;">
                                             <div style="background-color:#F2F6F9; border-radius:12px; border:2px solid #1a1a1a; padding:24px; text-align:left;">
                                                 <h4 style="font-family:'Pretendard', sans-serif; font-size:18px; font-weight:bold; margin:0 0 8px 0; color:#1a1a1a;">새로운 미래를 여는 첫걸음🤹‍♀️</h4>
                                                 <p style="color:#666666; font-family:'Pretendard', sans-serif; font-size:13px; margin:0 0 12px 0; font-weight:600;">SBI 2026년도 양성과정(22기) 모집 안내</p>
@@ -115,8 +125,10 @@
                                             </div>
                                         </td>
                                     </tr>
-							    </tbody>
-						    </table>
+                                </tbody>
+                            </table>
+                            <!-- SBI 세부 섹션 끝 -->
+
 						</td>
 					</tr>
                     <tr>
@@ -126,18 +138,14 @@
                             </div>
                             <div style="background-color: #ffffff; border-radius: 16px; border: 2px solid #1a1a1a; padding: 32px; box-shadow: 6px 6px 0px #1a1a1a;">
                                 <div style="color: #333333; font-family: 'Pretendard', sans-serif; font-size: 15px; line-height: 1.8;">
-                                    <p style="margin-top: 0; margin-bottom: 24px;">AI 시대는 출판 정책 및 제도 변화에도 큰 영향을 미치고 있습니다. <strong><a href="https://v.daum.net/v/20260313114100737">문화체육관광부의 전담 부서 신설🔗</a></strong>과 <strong><a href="https://www.kgmail.kr/news/articleView.html?idxno=609080">국회의 'AI 도서 납본' 관련 법 제정🔗</a></strong>은 AI 시대에 발맞추기 위한 조정의 일환으로 읽힙니다. 이에 발맞춰 출판사들은 인간 고유의 경험과 통찰 그리고 스토리텔링에 다시 주목하며 <strong><a href="https://www.chosun.com/culture-life/culture_general/2026/03/13/ZG7IQY42XRGY3MZM3PO27IS3VA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news">새로운 활로🔗</a></strong>를 모색하고 있답니다. 
-<strong><a href="https://www.mk.co.kr/news/business/11985233">해외 출판계🔗</a></strong>에서는 AI기술을 효율적인 도구로 활용하되 창작의 본질은 여전히 사람에게 두는 원리를 고수하며 품질 관리에 집중하는 흐름이 이어지고 있어요. 
-<p style="margin: 0;"></p>결국 기술의 이점이 많아지고 추동의 속도가 재빨라지더라도, 독자의 마음을 움직이는 진정한 힘은 책이 담보하는 사유의 깊이에 있을 것입니다. 우리 단체 또한 AI 위원회를 신설하여 출판인 대상 토론회를 개최하는 등 변화의 파고를 넘기 위한 출판인들의 지혜와 소중한 의견을 모을 예정이니 많은 성원 부탁드려요! 
-<p style="margin: 0;"></p>
-
-
-
-</p>
+                                    <p style="margin-top: 0; margin-bottom: 24px;">AI 시대는 출판 정책 및 제도 변화에도 큰 영향을 미치고 있습니다. <strong><a href="https://v.daum.net/v/20260313114100737" target="_blank">문화체육관광부의 전담 부서 신설🔗</a></strong>과 <strong><a href="https://www.kgmail.kr/news/articleView.html?idxno=609080" target="_blank">국회의 'AI 도서 납본' 관련 법 제정🔗</a></strong>은 AI 시대에 발맞추기 위한 조정의 일환으로 읽힙니다. 이에 발맞춰 출판사들은 인간 고유의 경험과 통찰 그리고 스토리텔링에 다시 주목하며 <strong><a href="https://www.chosun.com/culture-life/culture_general/2026/03/13/ZG7IQY42XRGY3MZM3PO27IS3VA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">새로운 활로🔗</a></strong>를 모색하고 있답니다. 
+                                    <strong><a href="https://www.mk.co.kr/news/business/11985233" target="_blank">해외 출판계🔗</a></strong>에서는 AI기술을 효율적인 도구로 활용하되 창작의 본질은 여전히 사람에게 두는 원리를 고수하며 품질 관리에 집중하는 흐름이 이어지고 있어요.</p>
+                                    
+                                    <p style="margin-top: 0; margin-bottom: 24px;">결국 기술의 이점이 많아지고 추동의 속도가 재빨라지더라도, 독자의 마음을 움직이는 진정한 힘은 책이 담보하는 사유의 깊이에 있을 것입니다. 우리 단체 또한 AI 위원회를 신설하여 출판인 대상 토론회를 개최하는 등 변화의 파고를 넘기 위한 출판인들의 지혜와 소중한 의견을 모을 예정이니 많은 성원 부탁드려요!</p>
                                     
                                     <ul style="padding-left: 20px; margin: 0; color:#555555; font-size:14px; line-height:1.7;">
                                         <li style="margin-bottom:8px;"><a href="https://v.daum.net/v/20260313114100737" style="color:#1a1a1a; font-weight:600; text-decoration:underline;" target="_blank">[단독]문체부, AI 콘텐츠산업 진흥법 제정 추진...문화인공지능정책과 신설 - 머니투데이</a></li>
-                                        <li><a href="https://www.kgmail.kr/news/articleView.html?idxno=609080" style="color:#1a1a1a; font-weight:600; text-decoration:underline;" target="_blank">AI 로 찍어낸 ‘ 딸깍 출판 ’ … 전용기 의원 , 납본 보상금 악용 차단 법안 발의 - 경기매일</a></li>
+                                        <li style="margin-bottom:8px;"><a href="https://www.kgmail.kr/news/articleView.html?idxno=609080" style="color:#1a1a1a; font-weight:600; text-decoration:underline;" target="_blank">AI 로 찍어낸 ‘ 딸깍 출판 ’ … 전용기 의원 , 납본 보상금 악용 차단 법안 발의 - 경기매일</a></li>
                                         <li style="margin-bottom:8px;"><a href="https://www.chosun.com/culture-life/culture_general/2026/03/13/ZG7IQY42XRGY3MZM3PO27IS3VA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" style="color:#1a1a1a; font-weight:600; text-decoration:underline;" target="_blank">AI가 책 쓰는 시대… “인간만이 쓸 수 있는 글로 헤쳐나가겠다” - 조선일보</a></li>
                                         <li style="margin-bottom:8px;"><a href="https://www.mk.co.kr/news/business/11985233" style="color:#1a1a1a; font-weight:600; text-decoration:underline;" target="_blank">AI가 흔드는 스토리텔링 산업…감동의 한끗차이 어떻게 만들까 [이승윤의 디지털로 읽다] - 매일경제</a></li>
                                     </ul>
@@ -154,8 +162,8 @@
 						    <table border="0" cellpadding="0" cellspacing="0" style="width:100%; border-collapse: collapse; margin-bottom: 40px;">
 							    <tbody>
 								    <tr>
-									    <td style="padding-right:10px; padding-bottom:20px; vertical-align:top" width="50%">
-									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: collapse; height:100%;">
+									    <td style="padding-bottom:24px; vertical-align:top" width="100%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: separate; border-spacing: 0; height:100%;">
 										        <tbody>
 											        <tr>
 												        <td style="padding:24px;">
@@ -167,8 +175,10 @@
 										        </tbody>
 									        </table>
 									    </td>
-									    <td style="padding-left:10px; padding-bottom:20px; vertical-align:top" width="50%">
-									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: collapse; height:100%;">
+                                    </tr>
+                                    <tr>
+									    <td style="padding-bottom:24px; vertical-align:top" width="100%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: separate; border-spacing: 0; height:100%;">
 										        <tbody>
 											        <tr>
 												        <td style="padding:24px;">
@@ -182,8 +192,8 @@
 									    </td>
 								    </tr>
 								    <tr>
-									    <td style="padding-right:10px; padding-bottom:20px; vertical-align:top" width="50%">
-									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: collapse; height:100%;">
+									    <td style="padding-bottom:24px; vertical-align:top" width="100%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: separate; border-spacing: 0; height:100%;">
 										        <tbody>
 											        <tr>
 												        <td style="padding:15px; text-align:center">
@@ -200,8 +210,10 @@
 										        </tbody>
 									        </table>
 									    </td>
-									    <td style="padding-left:10px; padding-bottom:20px; vertical-align:top" width="50%">
-									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: collapse; height:100%;">
+                                    </tr>
+                                    <tr>
+									    <td style="padding-bottom:20px; vertical-align:top" width="100%">
+									        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border-radius:12px; border:2px solid #1a1a1a; box-shadow:4px 4px 0px #1a1a1a; overflow:hidden; width:100%; border-collapse: separate; border-spacing: 0; height:100%;">
 										        <tbody>
 											        <tr>
 												        <td style="padding:15px; text-align:center">
@@ -242,13 +254,13 @@
                                         </tr>
                                         <tr>
                                             <td style="padding-bottom:16px">
-                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 8px 0">0월 0일(목)</p>
-                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%; border-collapse: collapse;">
+                                                <p style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:14px; font-weight:900; margin:0 0 8px 0">4월 9일(목)</p>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:12px; box-shadow:2px 2px 0px #1a1a1a; width:100%; border-collapse: separate; border-spacing: 0; overflow: hidden;">
                                                     <tbody>
                                                         <tr>
                                                             <td style="padding:16px">
                                                                 <span style="display: inline-block; padding: 4px 10px; border: 1.5px solid #1a1a1a; border-radius: 999px; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; font-size: 11px; font-weight: bold; color: #1a1a1a; margin-right: 6px; box-shadow: 1px 1px 0px #1a1a1a; background-color:#E2E4FF;">회의</span> <strong style="color:#1a1a1a; font-family:'Pretendard', sans-serif; font-size:15px">제2차 실행이사회 회의</strong>
-                                                                <p style="color:#666666; font-size:13px; margin-top:8px; margin-bottom:0;">00:00 | 4층 회의실</p>
+                                                                <p style="color:#666666; font-size:13px; margin-top:8px; margin-bottom:0;">16:00 | 4층 회의실</p>
                                                             </td>
                                                         </tr>                                        
                                                     </tbody>
@@ -263,10 +275,10 @@
                     <tr>
 						<td align="center" style="background-color:#FFFdfa; padding:60px 40px">
 						    <h2 style="color:#1a1a1a; font-family:'Pretendard', 'Noto Sans KR', sans-serif; font-size:24px; font-weight:800; margin-bottom:24px; text-align:center;">맺음말</h2>
-						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:5px 5px 0px #1a1a1a; width:100%; border-collapse: collapse;">
+						    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff; border:2px solid #1a1a1a; border-radius:16px; box-shadow:5px 5px 0px #1a1a1a; width:100%; border-collapse: separate; border-spacing: 0; overflow: hidden;">
 							    <tbody>
 								    <tr>
-									    <td style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.7; padding:32px; text-align:center; font-weight:600;">
+									    <td style="color:#333333; font-family:'Pretendard', sans-serif; font-size:15px; line-height:1.7; padding:32px; text-align:justify; font-weight:600;">
                                             <p style="margin: 0 0 16px 0;">봄이 오면 떠오르는 말들이 있습니다. 봄동, 새순, 포근하다, 푹하다, 움트다... 심보선 시인의 시처럼 '봄에서 써야지 속으로 생각했던' 것이 있다면, 다가온 봄날에 맘껏 써보면 어떨까요. 겨우내 움츠렸던 새싹들이 기지개를 켜듯 출판인 여러분의 모든 계획도, 새로운 책들도 눈부시게 피어나길 응원합니다.</p>
                                             <p style="margin: 0;">우리는 다음에 다시 만나요!✨</p>
                                         </td>
@@ -276,6 +288,14 @@
                             <div style="margin-top: 48px; text-align: center;">
                                 <a href="https://forms.gle/uMaMbQRUYveHKxEd7" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; padding: 16px 36px; font-size: 16px; box-shadow: 4px 4px 0px #1a1a1a;" target="_blank">뉴스레터 피드백 남기기</a>
                             </div>
+
+                            <!-- 카카오톡 채널 추가 안내 섹션 -->
+                            <div style="margin-top: 32px; padding: 24px; border: 0px solid #1a1a1a; border-radius: 16px; box-shadow: 0px 0px 0px #1a1a1a; text-align: center;">
+                                <p style="color: #1a1a1a; font-family: 'Pretendard', sans-serif; font-size: 16px; font-weight: 900; margin: 0 0 8px 0;">📢 '책-업' 뉴스레터, 카카오톡으로 더 편하게!</p>
+                                <p style="color: #555555; font-family: 'Pretendard', sans-serif; font-size: 14px; line-height: 1.6; margin: 0 0 16px 0;">카카오톡 채널을 추가하시면 편리하게 받아보실 수 있습니다.</p>
+                                <a href="https://pf.kakao.com/_XxmHxfu" style="display: inline-block; background-color: #FEE500; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; padding: 12px 28px; font-size: 14px; box-shadow: 3px 3px 0px #1a1a1a;" target="_blank">🔗 카카오톡 채널 추가</a>
+                            </div>
+
 						    <table border="0" cellpadding="0" cellspacing="0" style="border-top:2px solid #1a1a1a; margin-top:48px; width:100%; border-collapse: collapse;">
 							    <tbody>
 								    <tr>
