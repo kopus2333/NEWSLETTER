@@ -1,0 +1,469 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">
+        /* 리셋 및 기본 설정 */
+        body, table, td, p, a, h1, h2, h3, h4, h5 { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
+        p, td { word-break: break-word; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; max-width: 100%; }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            background-color: #FDFCF8;
+            background-image: linear-gradient(135deg, #FDECF2 0%, #FDF8E1 50%, #E0F4E8 100%);
+        }
+
+        /* 모바일 최적화 미디어 쿼리 (지원하는 클라이언트용) */
+        @media screen and (max-width: 640px) {
+            .container { width: 100% !important; max-width: 100% !important; }
+            .content-padding { padding: 30px 20px !important; }
+            .mobile-font-title { font-size: 24px !important; }
+            .mobile-font-text { font-size: 14px !important; }
+        }
+    </style>
+<!-- 전체 래퍼 테이블 -->
+<table border="0" cellpadding="0" cellspacing="0" style="background-color: #FDFCF8; width: 100%;">
+    <tbody><tr>
+        <td align="center" style="padding: 40px 10px;">
+
+            <!-- 중앙 컨테이너 (최대 640px) -->
+            <table border="0" cellpadding="0" cellspacing="0" class="container" style="background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 24px; box-shadow: 8px 8px 0px #1a1a1a; max-width: 640px; width: 100%; margin: 0 auto; overflow: hidden; border-collapse: separate; border-spacing: 0; table-layout: fixed;">
+
+                <!-- 헤더 섹션 -->
+                <tbody><tr>
+                    <td align="center" style="border-bottom: 2px solid #1a1a1a; padding: 48px 30px; background-color: #ffffff;">
+                        <h1 style="color: #1a1a1a; font-size: 32px; font-weight: 900; letter-spacing: -1px; margin: 0;">📚 책-업 (Check-UP)</h1>
+                        <p style="color: #4A4A4A; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin-top: 8px; text-transform: uppercase;">Korea Publishers Society | 제7호(2026. 10. 27.)</p>
+                        <table border="0" cellpadding="0" cellspacing="0" style="margin-top: 12px;">
+                            <tbody><tr>
+                                <td>
+                                    <a href="https://www.kopus.org/kopusnewsletter/" style="color: #888888; font-size: 12px; text-decoration: underline;" target="_blank">웹에서 보기</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+
+                <!-- 인트로 섹션 -->
+                <tr>
+                    <td align="center" class="content-padding" style="background-color: #FFFdfa; border-bottom: 2px solid #1a1a1a; padding: 60px 20px;">
+                        <h2 class="mobile-font-title" style="color: #1a1a1a; font-size: 26px; font-weight: 800; line-height: 1.4; margin: 0 0 24px 0;">책이 없으면 AI도 없습니다 📚</h2>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 480px; width: 100%;">
+                            <tbody><tr>
+                                <td style="color: #333333; font-size: 15px; line-height: 1.6; text-align: justify;">
+                                    10월의 마지막 주, 이번 호에서는 AI 기업의 도서 대량 매입 관련 단체 입장과 대한민국 호소문 연명에 이어, 11월 초에 열리는 출판콘텐츠 세액공제 도입 국회 간담회와 아시아 출판 주간 소식도 담았습니다. 열정이 넘쳤던 서울북인스티튜트 교육발표회 현장도 함께 둘러보시기 바랍니다.
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <!-- 라벨 그룹 -->
+                <tr>
+                    <td class="content-padding" style="background-color: #ffffff; border-bottom: 2px solid #1a1a1a; padding: 50px 16px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin: 0 auto; table-layout: fixed;">
+                                <tbody><tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: separate; border-spacing: 0; max-width: 100%;">
+                                            <tbody><tr>
+                                                <td align="center" style="background-color: #A6F4D0; border: 2px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; font-size: 17px; font-weight: bold; line-height: 1.4; padding: 9px 22px; word-break: keep-all;">AI와 출판</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <img alt="" src="https://i.imgur.com/Q97S71u.png" width="100%" style="border: 2px solid #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; height: auto; box-sizing: border-box; margin: 0 auto 24px auto; display: block;" />
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">AI 무단 학습 목적 도서 매입 의혹, 우리 단체 입장 🎤</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">“현대판 분서갱유, AI의 ‘책 도둑질’ 막아야”</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        AI 학습 목적으로 앤트로픽이 국내 도서를 대량 매입한 정황이 잇따라 보도되면서 출판계의 우려가 커지고 있습니다. 지금까지의 경과를 정리해 드릴게요.<br />
+<br />
+▪ <strong>10월 12일</strong> : AI 학습 목적의 한국어 도서 대량 매입 시도 관련 언론 보도<br />
+▪ <strong>10월 15일</strong> : 도서 유통·판매 사업자 대상 ‘저작권 침해 의심 사례 제보 및 협조 요청’ 공문 발송<br />
+▪ <strong>10월 15일</strong> : AI 기업 앤트로픽이 웅진북센을 통해 국내 도서를 대량 매입하고 해외로 반출했다는 언론 보도<br />
+<br />
+<strong>우리 단체 입장</strong><br />
+홍영완 회장은 서울경제 인터뷰에서 AI 기업이 어떤 책을 학습에 활용했는지, 결과물의 출처가 무슨 책인지 밝히지 않는 것은 도덕적으로도 법적으로도 심각한 문제라고 지적했습니다. 학습에 쓰인 책이 파쇄된 일에 대해서는 ‘분서갱유’에 비견할 만큼 참담하다고 비판했어요. 윤성훈 AI미래전략위원장도 JTBC 인터뷰에서 같은 취지로 ‘책의 죽음’이라고 언급했고, 박성경 부회장은 KBS 보도에서 허락 없는 이용을 ‘약탈 행위’라고 짚었습니다.<br />
+<br />
+출판계는 대응도 서두르고 있습니다. AI 기업이 활용 과정을 공개하고 정당한 대가를 지급하도록 관련 법 개정을 요구할 방침이며, 출판계 공동 저작권 신탁 기구를 만들어 AI 기업과의 이용 허락·보상 협의를 맡기는 방안도 추진하고 있어요. 아울러 서점·유통사 등 도서 매입처와의 협력 방안, 저작권자와 저자의 피해 현황 조사, 권리자 공동 대응, 공정이용 판단에 대한 대응 방향을 논의해 나갈 예정입니다.<br />
+<br />
+AI 학습용으로 의심되는 대량 주문이나 문의 혹은 관련 정황을 확인하셨다면 사무국(kopus@kopus.org)으로 알려 주시기 바랍니다.
+<br />
+(방송화면 : 2026년 10월 23일 자 JTBC 뉴스룸)
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border-radius: 12px; border: 2px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td style="padding: 24px 16px;">
+                                                    <p style="color: #333333; font-size: 15px; line-height: 1.8; margin: 0 0 24px 0; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        <strong>관련 기사 📰</strong><br />
+
+                                                    </p>
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed;">
+                                                            <tbody><tr><td style="padding-bottom: 8px; word-break: break-word; overflow-wrap: break-word;">• <a href="https://www.yonhapnewstv.co.kr/news/MYH202610240840222o0" style="color: #1a1a1a; font-size: 14px; font-weight: 600; text-decoration: underline;" target="_blank">연합뉴스TV | 기업체 AI 무단 학습에 발칵…눈물 짓는 출판계 (10.24.)</a></td></tr>
+                                                            <tr><td style="padding-bottom: 8px; word-break: break-word; overflow-wrap: break-word;">• <a href="https://news.jtbc.co.kr/article/NB12324591" style="color: #1a1a1a; font-size: 14px; font-weight: 600; text-decoration: underline;" target="_blank">JTBC | 한강도 당했다…‘AI 도둑 학습’ 뒤 파쇄 “현대판 분서갱유” (10.23.)</a></td></tr>
+                                                            <tr><td style="padding-bottom: 8px; word-break: break-word; overflow-wrap: break-word;">• <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8693089" style="color: #1a1a1a; font-size: 14px; font-weight: 600; text-decoration: underline;" target="_blank">KBS | “헌책 대량으로 삽니다”…‘AI 학습용’ 책 매입 의혹 (10.22.)</a></td></tr>
+                                                            <tr><td style="word-break: break-word; overflow-wrap: break-word;">• <a href="https://www.sedaily.com/article/20103917" style="color: #1a1a1a; font-size: 14px; font-weight: 600; text-decoration: underline;" target="_blank">서울경제 | “저작권 신탁기구 추진…AI의 ‘책 도둑질’ 막아야” (10.20.)</a></td></tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <img alt="" src="https://i.imgur.com/DoWBKDz.png" width="100%" style="border: 2px solid #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; height: auto; box-sizing: border-box; margin: 0 auto 24px auto; display: block;" />
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">‘대한민국 호소문’, 함께 이름을 올려 주세요 ✍️</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">책이 없으면 AI도 없습니다(No Books, No AI)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        한국출판인회의(AI미래전략위원장 윤성훈)는 <strong>「정부·국회·AI 기업에 보내는 대한민국 호소문」</strong>을 발표하고 연명을 받고 있습니다. 10월 6일 독일에서 나온 프랑크푸르트 호소문의 뜻에 공감하며, 한국 출판계의 공동 입장을 담았어요.<br />
+<br />
+호소문은 정부와 국회, AI 기업에 세 가지를 요구합니다.<br />
+<br />
+① <strong>AI 기업은 학습 데이터의 출처를 밝혀야 합니다.</strong><br />
+② <strong>AI 학습은 권리자의 이용허락이 원칙입니다.</strong><br />
+③ <strong>AI 기업은 출판물의 권리자에게 정당한 보상을 해야 합니다.</strong><br />
+<br />
+현재까지 단체 279곳, 개인 1,232명(10월 27일 오전 9시 기준)이 뜻을 모아 주셨어요. 연명은 출판사와 기관 등 단체는 물론, 작가·번역가·그림 작가·출판 관계자, 그리고 책을 사랑하는 개인도 참여하실 수 있습니다. <br />
+<br />
+회원사께서는 출판사 명의 및 임직원 개인 명의로 연명에 참여해 주시고, 귀사에서 책을 펴낸 작가·번역가분들께도 참여 링크를 안내해 주세요. 출판사 홈페이지 SNS에 호소문과 링크를 공유해 주시면 큰 힘이 됩니다.<br />
+<br />
+한국출판인회의는 앞으로 정부, 국회와 협력해 학습 데이터 출처 표시, 권리자 이용허락 원칙 수립, 정당한 보상 등을 담은 관련 법안 발의를 준비해 가겠습니다.
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://www.kopus.org/ai-appeal/" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">대한민국 호소문 연명 참여하기</a> <a href="https://www.joongang.co.kr/article/25470324" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">관련 보도(중앙일보)</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <!-- 라벨 그룹 -->
+                <tr>
+                    <td class="content-padding" style="background-color: #ffffff; border-bottom: 2px solid #1a1a1a; padding: 50px 16px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin: 0 auto; table-layout: fixed;">
+                                <tbody><tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: separate; border-spacing: 0; max-width: 100%;">
+                                            <tbody><tr>
+                                                <td align="center" style="background-color: #A6F4D0; border: 2px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; font-size: 17px; font-weight: bold; line-height: 1.4; padding: 9px 22px; word-break: keep-all;">출판사 권리 신장</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <img alt="" src="https://i.imgur.com/xt6DpGh.png" width="100%" style="border: 2px solid #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; height: auto; box-sizing: border-box; margin: 0 auto 24px auto; display: block;" />
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">출판콘텐츠 세액공제 도입을 위한 국회 간담회 개최 🏛️</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;"></p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        한국출판인회의(정책위원장 김보경)와 대한출판문화협회는 AI 기술이 콘텐츠의 생산과 활용 방식을 바꾸고 있는 지금, 양질의 텍스트와 지식·서사를 쌓아 여러 산업으로 확장할 수 있는 <strong>원천 콘텐츠로서 출판의 가치</strong>를 국회와 정부에 알리는 자리를 마련했습니다.<br />
+<br />
+▪ <strong>일시</strong> : 2026년 11월 2일(월) 오전 9시<br />
+▪ <strong>장소</strong> : 국회의원회관 제11간담회의실<br />
+▪ <strong>주최</strong> : 윤후덕·이광재·문진석·김영환·김재원 의원실<br />
+▪ <strong>주관</strong> : 대한출판문화협회, 한국출판인회의<br />
+▪ <strong>발언</strong> : 김보경 한국출판인회의 정책위원장, 염종선 창비 대표, 김헌 서울대 인문학연구원 교수, 김환철 한국웹소설작가협회 회장, 문체부 담당자<br />
+<br />
+출판콘텐츠 세액공제로 투자 여력이 늘어나면 콘텐츠 제작과 디지털 전환, 신규 인력 채용과 역량 강화, 후속 콘텐츠 개발과 재투자로 이어지는 <strong>선순환 구조</strong>를 만들 수 있습니다. 이번 간담회에서는 이런 효과에 대한 국회와 관계 부처의 공감대를 넓히고, 발의된 「조세특례제한법」 개정안의 심사와 통과를 위한 협력 기반을 마련하고자 합니다. 자세한 내용은 아래 링크를 참고해 주시기 바랍니다!
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://www.kopus.org/info-noticelist/?uid=1529&amp;mod=document" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">국회 간담회 참석 안내</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">제지사 담합 피해 출판사 공동 손해배상소송 참가 신청 안내 🔎</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">1차 모집 기간 : 2026년 10월 14일(수)~11월 15일(일)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        ‘제지사 담합 출판계 공동손해배상소송 추진위원회’는 인쇄용지 가격 담합으로 출판사들이 입은 피해를 회복하고 출판계의 권익을 보호하기 위해, 법무법인 지향을 소송대리인으로 선정하여 <strong>공동 손해배상청구 소송</strong>을 추진합니다. 이에 소송 참가 신청을 안내해 드립니다.<br />
+<br />
+▪ <strong>참가 대상</strong> : 공정거래위원회가 적발한 담합 기간(2021. 2. 22.~2024. 12. 2. 기준, 제지사별 상이) 중 6개 제지사(한솔, 한국, 홍원, 무림 계열 3사)의 인쇄용지를 구매한 출판사. 지류 유통사·대리점·인쇄소 등을 통해 용지를 구매한 경우와 인쇄소에 용지 구매 및 인쇄를 일괄 위탁한 경우에도 참가할 수 있습니다.<br />
+▪ <strong>소송 참가 비용</strong> : 출판사당 20만 원 (착수금과 부가가치세, 인지대·송달료 및 향후 소송 준비와 진행에 필요한 비용의 예치금 포함)<br />
+▪ <strong>추가 비용</strong> : 청구취지 확장에 따른 추가 인지대, 감정비, 경제분석비 등이 필요한 경우 참여 출판사가 분담하며, 용도·집행금액·분담 기준·납부 기한은 추진위원회에서 논의하여 정합니다.<br />
+▪ <strong>참가 신청</strong> : 소송 홈페이지(pubsclass.com)를 통해 신청<br />
+▪ <strong>문의</strong> : 법무법인 지향<br />
+(전화 02-3476-6002 / 이메일 pubsclass@jihyanglaw.com)<br />
+<br />
+회원사 여러분의 관심과 참여를 부탁드립니다.
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://pubsclass.com" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">소송 참가 신청하기</a> <a href="https://www.kopus.org/info-noticelist/?uid=1522&amp;mod=document" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">공지사항 보기</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <!-- 라벨 그룹 -->
+                <tr>
+                    <td class="content-padding" style="background-color: #ffffff; border-bottom: 2px solid #1a1a1a; padding: 50px 16px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin: 0 auto; table-layout: fixed;">
+                                <tbody><tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: separate; border-spacing: 0; max-width: 100%;">
+                                            <tbody><tr>
+                                                <td align="center" style="background-color: #93C5FD; border: 2px solid #1a1a1a; border-radius: 999px; color: #1a1a1a; font-size: 17px; font-weight: bold; line-height: 1.4; padding: 9px 22px; word-break: keep-all;">아시아 출판 주간</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">2026 아시아 퍼블리셔스 포럼에 초대합니다 🌏</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">11월 5일(목) 14:30~17:00 · 창비서교빌딩 50주년홀</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        한국출판인회의(K북글로벌전략위원장 조한나)가 주최하는 2026 아시아 출판 주간이 <strong>11월 3일(화)부터 6일(금)까지</strong> 서울에서 열립니다. 주제는 <strong>‘AI 시대의 출판, 위기와 기회 사이에서’</strong>이며, 한국, 독일, 튀르키예, 대만, 베트남, 인도네시아, 태국, 싱가포르 등 8개국 13명의 출판인이 함께합니다. 그중 <strong>아시아 퍼블리셔스 포럼</strong>은 출판인은 물론 AI와 출판에 관심 있는 작가, 독자, 관계자 누구나 참여하실 수 있어요.<br />
+<br />
+▪ <strong>일시</strong> : 2026년 11월 5일(목) 14:30~17:00<br />
+▪ <strong>장소</strong> : 창비서교빌딩 지하 2층 50주년홀 (주차 불가, 대중교통 이용 필수)<br />
+▪ <strong>내용</strong> : 2026 아시아 북 어워드 수상작 소개, 출판 전문가 3인의 세션 발표<br />
+▪ <strong>신청</strong> : 온라인 선착순 (동시통역 제공, 참가자 기념품 증정)<br />
+<br />
+<strong>세션 1 · 대응, 도구와 위협 사이</strong><br />
+슈테펜 마이어 DPR 대표(독일) : 프랑크푸르트 호소문을 비롯한 유럽 출판계의 AI 제도·정책 대응 현황<br />
+<br />
+<strong>세션 2 · 활용, 출판 프로세스와 AI</strong><br />
+송경석 한빛미디어 부장(한국) : AI, 무엇을 맡기고 무엇을 지킬 것인가<br />
+<br />
+<strong>세션 3 · 발견, AI가 독자가 될 때</strong><br />
+부이 투 하 알파북스 제작총괄 겸 편집장(베트남) : AI 시대 책의 발견성을 높이는 방법
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://forms.gle/kagak7zZXhwyDH9c6" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">포럼 참가 신청하기</a> <a href="https://www.kopus.org/info-noticelist/?uid=1526&amp;mod=document" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">프로그램 안내 공지</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">해외 출판사와 만나는 비즈니스 미팅 참가 신청 🤝</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">11월 6일(금) 09:00~12:00 · 신청 마감 10월 28일(수)</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        해외 출판사 및 에이전시 10명(6개 지역)과 <strong>저작권 교류</strong>를 나눌 수 있는 비즈니스 미팅입니다. 해외 출판사당 30분씩 진행되며, 신청해 주신 출판사에는 일정을 조율해 개별로 안내해 드려요.<br />
+<br />
+▪ <strong>일시</strong> : 2026년 11월 6일(금) 09:00~12:00<br />
+▪ <strong>장소</strong> : 청년문화공간 JU 동교동 1층 카페<br />
+▪ <strong>신청</strong> : <strong>10월 28일(수)까지</strong> 신청서와 영문 카탈로그를 kopusworld@gmail.com으로 제출<br />
+▪ <strong>유의사항</strong> : 출판사당 최대 2명까지 참석할 수 있으며, 해외 참가자의 사정에 따라 미팅 시간이 일부 조정될 수 있습니다.<br />
+<br />
+참가자별 상세 소개는 아시아 출판 주간 웹사이트에서 확인하실 수 있습니다.
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://drive.google.com/file/d/1TRTk-kW4-Q55-nPnIbOmtkun3Knq2hIr/view?usp=sharing" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">비즈니스 미팅 참가 신청서 다운로드</a> <a href="https://asianpubweek.org/participant-information_2026/" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">참가자 소개</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <!-- 라벨 그룹 -->
+                <tr>
+                    <td class="content-padding" style="background-color: #ffffff; border-bottom: 2px solid #1a1a1a; padding: 50px 16px;">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin: 0 auto; table-layout: fixed;">
+                                <tbody><tr>
+                                    <td align="center" style="padding-bottom: 30px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: separate; border-spacing: 0; max-width: 100%;">
+                                            <tbody><tr>
+                                                <td align="center" style="background-color: #1A1A1A; border: 2px solid #1a1a1a; border-radius: 999px; color: #FFFFFF; font-size: 17px; font-weight: bold; line-height: 1.4; padding: 9px 22px; word-break: keep-all;">📕 서울북인스티튜트</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 4px 4px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                                            <tbody><tr>
+                                                <td align="center" style="padding: 32px 16px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto 24px auto; max-width: 500px; width: 100%; border-collapse: separate; border-spacing: 0;">
+                                                <tbody><tr>
+                                                    <td width="50%" valign="top" style="padding-right: 6px;">
+                                                        <img alt="" src="https://i.imgur.com/QYIOCa3.jpeg" width="100%" style="border: 2px solid #1a1a1a; border-radius: 12px; width: 100%; max-width: 244px; height: auto; box-sizing: border-box; display: block;" />
+                                                    </td>
+                                                    <td width="50%" valign="top" style="padding-left: 6px;">
+                                                        <img alt="" src="https://i.imgur.com/f3S7tX3.jpeg" width="100%" style="border: 2px solid #1a1a1a; border-radius: 12px; width: 100%; max-width: 244px; height: auto; box-sizing: border-box; display: block;" />
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                            <h3 style="color: #1a1a1a; font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0 0 8px 0; text-align: center;">예비 출판인들의 결실, SBI 교육발표회 스케치 🎉</h3>
+                                            <p style="color: #666666; font-size: 14px; margin: 0 0 24px 0; text-align: center;">22기 채용예정자 교육발표회, 10월 16일 개최</p>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-top: 2px dashed #1a1a1a; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td style="padding-top: 20px; color: #333333; font-size: 15px; line-height: 1.7; text-align: justify; word-break: break-word; overflow-wrap: break-word;">
+                                                        지난 10월 16일(금) 한국출판인회의 회관이 서울북인스티튜트 22기 채용예정자과정 교육생들을 찾는 출판인들로 북적였어요. 지난 6개월간 갈고닦은 결과물을 선보이는 교육발표회가 열리는 날이었기 때문입니다!<br />
+<br />
+지하강당에서는 편집자·마케터 교육생들의 <strong>실습도서 24종과 기획서 24종</strong>, 동아리 활동 소개가 전시되었고, 201호에서는 디자이너 교육생들의 <strong>북디자인 작품 200여 종</strong>을 만나 볼 수 있었습니다.<br />
+<br />
+행사의 하이라이트는 <strong>현장 면담</strong>이었어요. 총 <strong>28개 출판사</strong>가 교육생 <strong>102명</strong>과 20분 안팎으로 면담을 진행하였습니다.<br />
+<br />
+발표회에서 선보인 자료집은 아래 링크에서도 확인하실 수 있어요. 한 해를 마무리하는 대망의 <strong>수료식은 11월 11일(수) 오전 11시</strong> 한국출판인회의 강당에서 열립니다!
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 32px; table-layout: fixed;">
+                                                <tbody><tr>
+                                                    <td align="center" style="text-align: center;"><a href="https://online.fliphtml5.com/rgihf/bycv/" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">교육발표회 자료집(편집자)</a> <a href="https://online.fliphtml5.com/rgihf/kpaq/" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">교육발표회 자료집(마케터)</a> <a href="https://online.fliphtml5.com/rgihf/sfuq/" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 14px 20px; font-size: 15px; box-shadow: 3px 3px 0px #1a1a1a; margin: 4px;" target="_blank">교육발표회 자료집(디자이너)</a></td>
+                                                </tr>
+                                            </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <!-- 맺음말 박스 -->
+                <tr>
+                    <td class="content-padding" align="center" style="background-color: #FFFdfa; padding: 60px 16px 30px 16px;">
+                        <h2 style="color: #1a1a1a; font-size: 24px; font-weight: 800; margin-bottom: 24px; text-align: center;">맺음말</h2>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; background-color: #FFFdfa; border: 2px solid #1a1a1a; border-radius: 16px; box-shadow: 5px 5px 0px #1a1a1a; overflow: hidden; border-collapse: separate; border-spacing: 0; margin: 0 auto; table-layout: fixed;">
+                            <tbody><tr>
+                                <td style="color: #333333; font-size: 15px; line-height: 1.7; padding: 32px 20px; font-weight: 600;">
+                                    <p style="margin: 0; text-align: justify;">어느덧 11월이 코앞입니다. 일교차가 큰 요즘처럼, 궂고 갠 소식이 번갈아 있었던 이번 뉴스레터, 어떠셨나요? 감기 조심하시고 따뜻한 차 한 잔과 함께 읽어 주시기를 바랍니다. 🍁</p>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+
+                <!-- 푸터 섹션 -->
+                <tr>
+                    <td class="content-padding" align="center" style="background-color: #FFFdfa; padding: 60px 16px; border-top: 2px solid #1a1a1a;">
+
+                        <!-- 피드백 버튼 -->
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin-top: 0;">
+                            <tbody><tr>
+                                <td align="center">
+                                    <a href="https://forms.gle/uMaMbQRUYveHKxEd7" style="display: inline-block; background-color: #C4B5FD; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 16px 36px; font-size: 16px; box-shadow: 4px 4px 0px #1a1a1a;" target="_blank">뉴스레터 피드백 남기기</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+
+                        <!-- 카카오톡 안내 -->
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; margin-top: 32px;">
+                            <tbody><tr>
+                                <td align="center" style="padding: 24px; border-radius: 16px;">
+                                    <p style="color: #1a1a1a; font-size: 16px; font-weight: 900; margin: 0 0 8px 0;">📢 '책-업' 뉴스레터, 카카오톡으로 더 편하게!</p>
+                                    <p style="color: #555555; font-size: 14px; line-height: 1.6; margin: 0 0 16px 0;">구독 신청을 편하게 받아보실 수 있습니다.</p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF2lCBuxNeve4fE_4MShgtPe1Bn-RTcT5qAvxOjBo4Yi_W5w/viewform?usp=sharing&amp;ouid=113106853200059657041" style="display: inline-block; background-color: #FEE500; color: #1a1a1a; text-decoration: none; border: 2px solid #1a1a1a; border-radius: 999px; font-weight: bold; padding: 12px 28px; font-size: 14px; box-shadow: 3px 3px 0px #1a1a1a;" target="_blank">🔗 카카오톡 구독 신청</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+
+                        <!-- 하단 정보 -->
+                        <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 100%; max-width: 560px; border-top: 2px solid #1a1a1a; margin-top: 48px;">
+                            <tbody><tr>
+                                <td align="center" style="color: #666666; font-size: 12px; font-weight: bold; padding-top: 40px; line-height: 1.6;">
+                                    <div style="margin-bottom: 24px;">
+                                        <a href="https://www.kopus.org" target="_blank">
+                                            <img src="https://imgur.com/X2SfM3h.png" alt="한국출판인회의 로고" width="140" style="max-width: 140px; height: auto; display: inline-block;" />
+                                        </a>
+                                    </div>
+                                    <p style="margin: 0 0 8px 0; color: #1a1a1a;">본 뉴스레터는 한국출판인회의 회원사를 대상으로 발송되었습니다.<br />(본 뉴스레터에 포함된 기사는 정보 제공을 목적으로 하며 단체의 공식 의견과 다를 수 있습니다.)</p>
+                                    <p style="margin: 0 0 4px 0; color: #888888;">© 2026 KOPUS</p>
+                                    <p style="margin: 0; color: #888888;">www.kopus.org | 02-3142-2334</p>
+                                </td>
+                            </tr>
+                        </tbody></table>
+
+                    </td>
+                </tr>
+
+            </tbody></table>
+            <!-- // 중앙 컨테이너 끝 -->
+
+        </td>
+    </tr>
+</tbody></table>
+<!-- // 전체 래퍼 테이블 끝 -->
